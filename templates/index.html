@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/favicon.jpg') }}" />
+
+    <title>
+        Karthik Shetty
+    </title>
+
+    <meta name="description" content="Description of Myself">
+    <meta name="keywords" content="Hello it is karthik shetty please reply..." />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+</head>
+<body>
+
+    <!-- ***** Header ***** -->
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <nav class="nav" role="navigation">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <span>Karthik Shetty</span>
+                </h1>
+                <p>Fresher</p>
+                <a href="#contact" class="btn btn--pink">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="work" id="work">
+            <div class="row">
+                <h2>My Work</h2>
+
+                <div class="work__box">
+                    <div class="work__text">
+                        <h3>Hackathon: Stock Market Project</h3>
+                        <p>
+                            Stock market Analyser for investors.
+                        </p>
+                        <ul class="work__list">
+                            <li>Python</li>
+                            <li>Streamlit</li>
+                            <li>yfinance</li>
+                            <li>bs4 [BeautifulSoup]</li>
+                        </ul>
+
+                        <div class="work__links">
+                            <a href="https://project-stock-market.onrender.com/" target="_blank" class="link__text">
+                                Visit Site <span>&rarr;</span>
+                            </a>
+                            <a href="https://github.com/kart9071/project-stock_market.git" title="View Source Code"
+                                target="_blank">
+                                <img src="{{ url_for('static', filename='images/github.svg') }}" class="work__code" alt="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work__image-box">
+                        <img src="{{ url_for('static', filename='images/stock-market.png') }}" class="work__image" alt="Project 1" height="400px" />
+                    </div>
+                </div>
+
+                <div class="work__boxes">
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Kisan Connect </h3>
+                            <p>
+                                A e-commerce website for the Farmers.
+                            </p>
+                            <ul class="work__list">
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Angular</li>
+                                <li>Frontend Frameworks</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://github.com/kart9071/KisanConnect.git" target="_blank" class="link__text">
+                                    Visit Github <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/kart9071/KisanConnect.git" title="View Source Code" target="_blank">
+                                    <img src="{{ url_for('static', filename='images/github.svg') }}" class="work__code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="{{ url_for('static', filename='images/KisanConnect.png') }}" class="work__image" alt="Project 1" height="500px" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>Gallery App</h3>
+                            <ul class="work__list">
+                                <li>Java</li>
+                                <li>XML</li>
+                                <li>Android Studio</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="https://github.com/kart9071/Gallery_app.git" class="link__text">
+                                    Visit GitHub <span>&rarr;</span>
+                                </a>
+                                <a href="https://github.com/kart9071/Gallery_app.git">
+                                    <img src="{{ url_for('static', filename='images/github.svg') }}" class="work__code" title="View Source Code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="{{ url_for('static', filename='images/gallery_image.png') }}" class="work__image" alt="Project 1" width="400px" height="400px" />
+                        </div>
+                    </div>
+
+                    <div class="work__box">
+                        <div class="work__text">
+                            <h3>E LEARNING MANAGEMENT SYSTEM</h3>
+                            <p>
+                                A e-learning management system for students, trainers and organizations
+                            </p>
+                            <ul class="work__list">
+                                <li>Java</li>
+                                <li>Spring MVC</li>
+                                <li>Angular</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+
+                            <div class="work__links">
+                                <a href="#" class="link__text">
+                                    Visit GitHub <span>&rarr;</span>
+                                </a>
+                                <a href="#">
+                                    <img src="{{ url_for('static', filename='images/github.svg') }}" class="work__code" title="View Source Code" alt="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__image-box">
+                            <img src="{{ url_for('static', filename='images/elearning2.png') }}" class="work__image" alt="Project 3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="row">
+                <h2>About Me</h2>
+                <div class="about__content">
+                    <div class="about__text">
+                        <p>
+                            I am Karthik Shetty, a entry professional with expertise in Java, Spring Boot, and Angular,
+                            and experience in network engineering. I have led projects in e-learning management and e-commerce, with a solid foundation in computer science from SKSJTI Bangalore.
+                        </p>
+                        <!-- Provide a link to your resume -->
+                        <a href="{{ url_for('static', filename='Karthik_BE_CSE.pdf') }}" class="btn">My Resume</a>
+                    </div>
+
+                    <div class="about__photo-container">
+                        <img class="about__photo" src="{{ url_for('static', filename='images/my_image.JPG') }}" alt="" width="400px"
+                            style="border-radius: 75%; border: 2px solid blue;" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact" id="contact">
+        <div class="row">
+            <h2>Get in Touch</h2>
+            <div class="contact__info">
+                <p>
+                    Hi This is Karthik Shetty, I am an entry professional.
+                </p>
+                <a href="mailto:Karthikakala13@gmail.com" class="btn">Karthikakala13@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <footer role="contentinfo" class="footer">
+        <div class="row">
+            <ul class="footer__social-links">
+                <li class="footer__social-link-item">
+                    <a href="https://github.com/kart9071/" title="Link to Github Profile">
+                        <img src="{{ url_for('static', filename='images/github.svg') }}" class="footer__social-image" alt="Github">
+                    </a>
+                </li>
+                <li class="footer__social-link-item">
+                    <a href="https://www.linkedin.com/in/karthik-shetty-b4794b230/">
+                        <img src="{{ url_for('static', filename='images/linkedin.svg') }}" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+        <img src="{{ url_for('static', filename='images/arrow-up.svg') }}" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
